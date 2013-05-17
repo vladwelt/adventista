@@ -1,0 +1,107 @@
+.bgcolor(){
+  background: rgb(0,0,0); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(69,72,77,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(69,72,77,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=0 ); /* IE6-9 */
+}
+
+.bghover(){
+  background: rgb(73,155,234); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(73,155,234,1)), color-stop(100%,rgba(32,124,229,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+@import "config.less";
+/* Font */
+@font-face {
+    font-family: 'AsapRegular';
+    src: url('fonts/Asap-Regular-webfont.eot');
+    src: url('fonts/Asap-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Asap-Regular-webfont.woff') format('woff'),
+         url('fonts/Asap-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Asap-Regular-webfont.svg#AsapRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Body */
+body {
+  background: lighten(@theme, 30%);
+  font-family: AsapRegular, sans-serif;
+  font-size: 11pt;
+}
+nav {
+  
+  margin: 0px auto 0;
+  width: 960px;
+  height: 40px;
+
+  .border;
+  .shadow;
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      a {
+        text-decoration: none;
+        display: inline-block;
+        float: left;
+        width: 160px;
+        height: 40px;
+        text-align: center;
+        line-height: 280%;
+        .textcolor(#FFF); // You can change this line
+        //.divider;
+        .gradient;
+        &:hover { .bghover; }
+      }
+    }
+    li:first-child a {
+      border-left: none;
+    }
+    li:last-child a {
+      border-right: none;
+    }
+  }
+  .bgcolor
+}
+
+#panel_izq{
+  position: relative;
+  margin: 0;
+  width: 123px;
+  height: 550px;
+  ul{
+    li{
+      padding: 3px;
+      font-weight: bold;
+      border: 5px;
+      a{
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .bghover;
+}
+
+footer{
+  text-align: center;
+  background-color: #00C0C0;
+}
