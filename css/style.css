@@ -11,55 +11,89 @@ a {
     clear: both;
 }
 
-#wrapper {
-    width: 960px;
-    margin: 0px auto;
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*Header properties*/
+#header {
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
 }
 
 #header ul {
     list-style-type: none;
-    padding-left: 20px;
 }
 
 #header ul li {
     float: left;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
-#header ul li a {}
+#header ul li a {
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+    font-size: 18px;
+    color: #B0B0B0;
+}
+
 #header ul li a:hover {}
 
+#wrapper {
+    max-width: 960px;
+    margin: 0px auto;
+    padding-top: 60px;
+}
+
 #menu {
-    width: 180px;
     float: left;
+    min-width: 260px;
+}
+
+#menu .box {
+    margin: 5px;
     padding: 10px;
+    border-left: 1px dashed #b0b0b0;
+    border-right: 1px dashed #b0b0b0;
 }
 
 #menu .box ul {
     list-style-type: none;
 }
 
-#menu .box ul li {}
-#menu .box ul li a {}
+#menu .box ul li {
+    padding: 5px;
+}
+
+#menu .box ul li a {
+    color: #b0b0b0;
+    font-size: 16px;
+}
+
 #menu .box ul li a:hover {}
 
 #main {
-    width: 720px;
-    display: inline-block;
-    padding: 20px;
+    float: left;
+    max-width: 650px;
+    padding-right: 20px;
 }
 
-#video {
-    width: 700px;
-    margin: 20px auto;
+#main h1 {
+    color: #B0B0B0;
+    font-size: 32px;
+    margin: 5px 10px 20px 10px;
 }
 
-#lista {
-    width: 320px;
-    margin: 10px auto;
+#main p {
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px 10px 20px 10px;
 }
-#lista ul {
-    list-style-type: none;
-}
-#lista ul li {}
-#lista ul li a {}
