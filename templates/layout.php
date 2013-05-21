@@ -10,13 +10,13 @@
     <body>
         <div id="header">
             <ul class="left">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Noticias</a></li>
-                <li><a href="">Eventos</a></li>
-                <li><a href="">Foro</a></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/noticias">Noticias</a></li>
+                <li><a href="/eventos">Eventos</a></li>
+                <li><a href="/foro">Foro</a></li>
             </ul>
             <ul class="right">
-                <li><a href="">Acceder</a></li>
+                <li><a href="/acceder">Acceder</a></li>
             </ul>
             <div class="clean"></div>
         </div>
@@ -25,12 +25,12 @@
             <div id="menu">
                 <div class="box">
                     <ul>
-                        <li><a href="#">Chat</a></li>
-                        <li><a href="#">Voz</a></li>
-                        <li><a href="visor.php">Video</a></li>
-                        <li><a href="subeArchivos.php">Subir Archivos</a></li>
-                        <li><a href="#">Capturar video</a></li>
-                        <li><a href="#">Mensajes</a></li>
+                        <li><a href="">Chat</a></li>
+                        <li><a href="">Voz</a></li>
+                        <li><a href="">Video</a></li>
+                        <li><a href="">Subir Archivos</a></li>
+                        <li><a href="">Capturar video</a></li>
+                        <li><a href="">Mensajes</a></li>
                     </ul>
                 </div>
             </div>

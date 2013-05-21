@@ -53,7 +53,7 @@ a {
 }
 
 #menu {
-    float: left;
+    float: right;
     min-width: 260px;
 }
 
@@ -96,4 +96,30 @@ a {
     font-size: 16px;
     text-align: justify;
     margin: 10px 10px 20px 10px;
+}
+
+form p label {
+    width: 180px;
+    float: left;
+}
+
+form p input[type="text"],
+form p input[type="password"],
+form p input[type="submit"] {
+    border: 1px solid #B0B0B0;
+    background-color: #FFFFFF;
+    padding: 4px;
+}
+
+form p.submit {
+    padding-left: 180px;
+}
+
+form p label,
+form p input[type="submit"] {
+    color: #B0B0B0;
+}
+
+form p label, form p input {
+    font-size: 20px;
 }

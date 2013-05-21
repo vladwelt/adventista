@@ -13,9 +13,13 @@ function __autoload($class) {
     include str_replace('_', '/', $class) . '.php';
 }
 
+// sessions
+session_start();
+
 // router
 $accepted_requests = array(
     ''           => 'Actions_Home',
+    'inicio'     => 'Actions_Home',
     'acceder'    => 'Actions_Login',
 );
 
@@ -29,6 +33,9 @@ if (!isset($_GET['page'])) {
 } else {
     $request = $_GET['page'];
     if (array_key_exists($request, $accepted_requests)) {
+        if (empty($request)) {
+            $request = 'inicio';
+        }
         $controller = new $accepted_requests[$request]($view, $request);
     } else {
         $controller = new Actions_404($view, '404');
