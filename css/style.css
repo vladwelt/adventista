@@ -27,6 +27,7 @@ a {
     left: 0px;
     right: 0px;
     z-index: 10;
+    background-color: #FFFFFF;
 }
 
 #header ul {
@@ -91,11 +92,28 @@ a {
     margin: 5px 10px 20px 10px;
 }
 
+#main h2 {
+    color: #A0A0A0;
+    font-size: 26px;
+    margin: 30px 10px 5px 10px;
+}
+
 #main p {
     font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
     font-size: 16px;
     text-align: justify;
     margin: 10px 10px 20px 10px;
+    line-height: 1.8em;
+}
+
+#main ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+#main ul li {
+    margin-left: 20px;
+    padding: 4px 0px;
 }
 
 form p label {
